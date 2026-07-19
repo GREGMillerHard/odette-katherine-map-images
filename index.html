@@ -190,13 +190,11 @@
   <img src="https://raw.githubusercontent.com/GREGMillerHard/odette-katherine-map-images/main/MASTER_O%26K.jpg" alt="Odette and Katherine" style="width:100%;display:block;margin:0 0 26px;border-radius:12px;cursor:zoom-in" onclick="showLightbox(this.src)">
   <h1><span class="tname tname-left">ODETTE</span><span class="amp">&amp;</span><span class="tname tname-right">KATHERINE</span></h1>
   <div class="sub">The journeys</div>
-
-  <div class="legend">
+ <div class="legend">
     <span class="swatch km"></span>Katherine Mansfield, 1908&ndash;1923<br>
     <span class="swatch oh"></span>Odette Hallowes, 1912&ndash;1995
   </div>
-
-  <div class="toggles">
+<div class="toggles">
     <button id="tOH" aria-pressed="true">Odette</button>
     <button id="tKM" aria-pressed="true">Katherine</button>
   </div>
@@ -272,9 +270,9 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r
   outlineBox.innerHTML = '<button id="outlineClose" aria-label="Close outline">&times;</button>' +
     '<img class="outline-hero" src="https://raw.githubusercontent.com/GREGMillerHard/odette-katherine-map-images/main/MASTER_O%26K.jpg" alt="Odette and Katherine" onclick=\'event.stopPropagation();showLightbox(["https://raw.githubusercontent.com/GREGMillerHard/odette-katherine-map-images/main/MASTER_O%26K.jpg"],0)\'>' +
     '<h4>ODETTE and KATHERINE</h4>' +
-    '<div class="sub">The Journeys.</div>' 
+    '<div class="sub">The Journeys. 
     '<p>‘Odette &amp; Katherine’ is the story about the connection between two women two decades apart.</p>' +
-    '<p>The story runs across two timelines and two world wars.</p>'
+    '<p>The story runs across two timelines and two world wars.</p>'</div>'
   document.getElementById('map').appendChild(outlineBox);
   // Shrink font until all text fits inside the fixed 16:9 box with no scroll
   function fitOutlineText(){
