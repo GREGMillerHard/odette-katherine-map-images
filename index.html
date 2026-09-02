@@ -141,7 +141,21 @@ footer .brand{font-size:15px;letter-spacing:.42em}
   border:7px solid transparent;border-bottom-color:var(--paper)}
 .burger{display:none;background:none;border:0;color:var(--ink);cursor:pointer;padding:8px}
 .burger span{display:block;width:24px;height:1.5px;background:var(--ink);margin:6px 0;transition:.3s}
-.mobilemenu{position:fixed;inset:0;background:var(--paper);z-index:99;display:flex;flex-direction:column;justify-content:center;gap:2px;padding:0 var(--pad);transform:translateY(-100%);visibility:hidden;transition:transform .5s cubic-bezier(.7,0,.2,1),visibility 0s linear .5s}
+/* line breaks that should only apply on mobile/lite widths (the hero-precede copy);
+   normal <br> behaviour below the 1400px lite breakpoint, suppressed above it */
+@media(min-width:1401px){.lite-br{display:none}}
+/* mobile-only Reserve Protocol / Reserve Test Tube hexes, one flanking each side of the
+   logo on the nav bar itself. Hidden on desktop, where the full-size versions already
+   live in .nav-cluster-left. The logo stays truly centred (a 1fr/auto/1fr grid, same
+   technique as the desktop nav) regardless of what's in the two side hexes. */
+.hexbtn-m.nav-hex-mobile-left,.hexbtn-m.nav-hex-mobile-right{display:none}
+.hexbtn-m{display:block;position:relative;flex:none;line-height:0;background:none;border:0;padding:0;margin:0}
+.hexbtn-m img{display:block;height:64px;width:auto;pointer-events:none}
+/* the link list (16 items) runs taller than the viewport on most phones, so the panel
+   needs to actually scroll rather than just vertically-centering and clipping whatever
+   doesn't fit; top padding clears the still-visible header/burger, bottom padding keeps
+   the last link off the screen edge once scrolled all the way down. */
+.mobilemenu{position:fixed;inset:0;background:var(--paper);z-index:99;display:flex;flex-direction:column;justify-content:flex-start;gap:2px;padding:104px var(--pad) 48px;overflow-y:auto;-webkit-overflow-scrolling:touch;transform:translateY(-100%);visibility:hidden;transition:transform .5s cubic-bezier(.7,0,.2,1),visibility 0s linear .5s}
 .mobilemenu.open{transform:translateY(0);visibility:visible;transition:transform .5s cubic-bezier(.7,0,.2,1),visibility 0s linear 0s}
 .mobilemenu a{font-size:34px;font-family:Arial,'Helvetica Neue',Helvetica,'Liberation Sans',sans-serif;padding:14px 0;border-bottom:1px solid var(--line-soft)}
 
@@ -155,14 +169,14 @@ footer .brand{font-size:15px;letter-spacing:.42em}
   align-items:start;align-content:start;flex:1 1 auto;position:relative;z-index:3;
   padding-top:clamp(24px,3vw,48px)}
 .hero-grid>div:first-child{max-width:660px;min-width:0}
-.hero-lower{position:relative;display:flex;flex-wrap:wrap;align-items:stretch;flex:1 1 auto;background:var(--paper);padding-right:max(var(--pad),430px);gap:clamp(24px,calc(1.7vw + 10px),42px)}
+.hero-lower{position:relative;display:flex;flex-wrap:wrap;align-items:stretch;flex:1 1 auto;background:var(--paper);padding-right:max(var(--pad),430px);gap:clamp(24px,calc(1.7vw + 18px),42px)}
 .hero-img-col{order:1;flex:0 0 62.7%;max-width:62.7%;position:relative;overflow:visible;
   display:flex;flex-direction:column;align-items:center;gap:clamp(14px,1.8vw,28px);background:var(--paper);
   padding:0 0 clamp(32px,4vh,56px) clamp(30px,4vw,64px);
   transform:translateX(clamp(24px,3.6vw,60px))}
 .hero-img-col img,.hero-img-col video{width:auto;max-width:calc(100% + 45px);height:auto;
   object-fit:contain;object-position:center top;display:block;margin:0 auto}
-.hero-img-col .hero-glass-img{max-height:68vh;transform:translate(150px,75px)}
+.hero-img-col .hero-glass-img{max-height:68vh;transform:translateY(75px)}
 .hero-img-col .hero-pack-img{max-height:54vh;transform:translateX(calc(23.4vw - clamp(24px,3.6vw,60px))) translateY(100px)}
 .hero-pillars{order:3;flex:0 0 100%;max-width:1040px;
   margin-top:clamp(40px,5vh,72px);margin-bottom:clamp(40px,5vh,72px);
@@ -179,7 +193,16 @@ footer .brand{font-size:15px;letter-spacing:.42em}
   text-transform:uppercase;color:var(--gold);margin:0 0 10px}
 .hero-pillars p{font-size:clamp(16px,1.3vw,18.5px);line-height:1.55;color:var(--ink);margin:0}
 .hero-pillars .kw{color:var(--gold);font-weight:600}
-.hero-grid{order:2;flex:1 1 0%;min-width:0;transform:translateX(-75px)}
+.hero-grid{order:2;flex:1 1 0%;min-width:0}
+/* this element also carries the shared .wrap class (for its mobile stacked
+   layout, where it needs the standard side margins); in the desktop flex-row
+   layout that same .wrap padding was eating ~130px out of an already-narrow
+   flex column, squeezing the headline copy down to a sliver. the right-hand
+   padding was pure waste (hero-lower already reserves its own right-hand
+   padding), so it's dropped; the left-hand padding is kept; it happens to be
+   exactly the clearance the copy needs against the glass video's right edge.
+   the max-width:1000px block below restores both sides for the mobile stack. */
+.hero-lower .hero-grid{padding-right:0}
 .hero-logo{font-family:'Playfair Display',Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:.005em}
 .hero-logo span{font-style:italic;font-weight:600;color:var(--gold)}
 .glassbox{position:relative;display:flex;justify-content:center;align-items:center;
@@ -838,6 +861,7 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
   .hero-img-col .hero-glass-img{max-height:285px;transform:none}
   .hero-img-col .hero-pack-img{max-height:145px}
   .hero-grid{order:2;transform:none}
+  .hero-lower .hero-grid{padding-left:var(--pad);padding-right:var(--pad)}
   .hero-pillars{order:3;flex:0 0 auto;max-width:none;grid-template-columns:1fr;gap:18px;margin:18px 0 0}
   .hero-grid,.prob-grid,.ritual-grid,.formgrid{grid-template-columns:1fr}
   .hero-grid{gap:24px}   /* single column: the wide desktop gap would waste height */
@@ -878,10 +902,16 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
    gaps, letter-spacing) was tightened so 6 links + 2 hex buttons fit safely back within
    1400px, with margin to spare down to ~1340px. */
 @media(max-width:1400px){
-  .navbar{display:flex;align-items:center;justify-content:center;height:78px;padding:0;position:relative}
+  /* three-column grid (same 1fr/auto/1fr technique the desktop nav uses) so the centre
+     column, the logo, always sits at the true horizontal centre of the bar no matter
+     what's in the two flanking hex columns -- unlike a flex row with justify-content:
+     center, where the logo's centring point shifts depending on what else is present. */
+  .navbar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:78px;padding:0;position:relative}
   .nav-cluster,.brand-center,.nav-cta{display:none}
-  .brand-mobile{display:block}
+  .brand-mobile{display:block;grid-column:2;justify-self:center}
   .burger{display:block;position:absolute;right:0;top:50%;transform:translateY(-50%)}
+  .hexbtn-m.nav-hex-mobile-left{display:block;grid-column:1;justify-self:end;margin-right:14px}
+  .hexbtn-m.nav-hex-mobile-right{display:block;grid-column:3;justify-self:start;margin-left:14px}
 }
 @media(max-width:600px){
   .hero-lower{padding-right:var(--pad)}
@@ -899,6 +929,11 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
 
   /* nav + hero */
   .navbar{height:64px}
+  /* scales down smoothly on very narrow phones (≤~375px) so the hexes never crowd the
+     burger button; still 50px at 560px+ */
+  .hexbtn-m img{height:clamp(30px,11vw,50px)}
+  .nav-hex-mobile-left{margin-right:clamp(4px,3vw,14px)}
+  .nav-hex-mobile-right{margin-left:clamp(4px,3vw,14px)}
   section[id]{scroll-margin-top:80px}
   .brand{font-size:17px;letter-spacing:.28em}
   .brand-mobile .brand-logo{height:36px}
@@ -1025,7 +1060,13 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
         <span class="hexdrop"><span class="hexdrop-card"><b>Join the List</b>Free to join the 2026 founding list. First access to the launch, plus founding-member pricing for life.</span></span>
       </a>
     </div>
+    <a href="#store" class="hexbtn-m nav-hex-mobile-left" aria-label="Reserve the Monthly Protocol">
+      <img src="nav-hex-reserve-protocol.png" alt="Reserve Protocol" width="344" height="408">
+    </a>
     <a href="#top" class="brand brand-mobile"><img src="honiora-logo.png" alt="HONIORA" class="brand-logo" width="1396" height="294"></a>
+    <a href="#store" class="hexbtn-m nav-hex-mobile-right" aria-label="Reserve a Single Pack test tube">
+      <img src="nav-hex-reserve-testtube.png" alt="Reserve Test Tube" width="344" height="408">
+    </a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
@@ -1107,7 +1148,7 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
     </div>
     <div class="wrap hero-grid">
     <div>
-      <p class="hero-precede rv"><span class="precede-lead">Upgrade your ritual.</span>HUGE pills and chalky, messy powders every morning?<br>HoniOra's Solution: Two fizzy tablets, a glass of water and sixty seconds.</p>
+      <p class="hero-precede rv"><span class="precede-lead">Upgrade your ritual.</span>HUGE pills and chalky, messy powders<br class="lite-br"> every morning?<br class="lite-br"> HoniOra's Solution:<br class="lite-br"> Two fizzy tablets, a glass of water and sixty seconds.</p>
       <h1 class="serif rv hero-logo">HONI<span>ORA</span></h1>
       <p class="hero-tag rv">M&#256;NUKA CREATINE PROTOCOL</p>
       <p class="eyebrow rv" style="margin-top:22px">Born in New Zealand &gt; Made in USA</p>
@@ -2255,6 +2296,30 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
          rather than appending it at the bottom. -->
 
     <article class="blogpost rv">
+      <p class="blogpost-meta">Article 04 &middot; Ingredients</p>
+      <h3 class="serif blogpost-title">Dr Vicki Petersen: The Powerful Benefits of M&#257;nuka Honey</h3>
+
+      <figure class="blogpost-fig video-fig" data-yt="d7Bky7AMQQw" style="aspect-ratio:1266/2256">
+        <img width="1266" height="2256" src="blog-manuka-benefits.jpg" alt="YouTube Shorts still of Dr Vicki Petersen mid-sentence with the on-screen caption 'so manuka honey is', from the video The Powerful Benefits of Manuka Honey" loading="lazy">
+        <a class="blogplay" href="https://youtube.com/shorts/d7Bky7AMQQw?si=EMphOQL0GW6nR54B" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Dr Vicki Petersen, The Powerful Benefits of Manuka Honey">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
+        </a>
+      </figure>
+    </article>
+
+    <article class="blogpost rv" style="margin-top:56px">
+      <p class="blogpost-meta">Article 03 &middot; Ingredients</p>
+      <h3 class="serif blogpost-title">Jenerise: Creatine's Origins &mdash; Essential for All, Not Just Athletes!</h3>
+
+      <figure class="blogpost-fig video-fig" data-yt="RnSxf7aFNxA" style="aspect-ratio:1266/2280">
+        <img width="1266" height="2280" src="blog-jenerise-origins.jpg" alt="YouTube Shorts still from Jenerise: a presenter mid-sentence with the on-screen caption 'creatine is', from the video Creatine's Origins: Essential for All, Not Just Athletes!" loading="lazy">
+        <a class="blogplay" href="https://youtube.com/shorts/RnSxf7aFNxA?si=u959-NZ1iNGv5zP3" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Jenerise, Creatine's Origins, Essential for All, Not Just Athletes">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg>
+        </a>
+      </figure>
+    </article>
+
+    <article class="blogpost rv" style="margin-top:56px">
       <p class="blogpost-meta">Article 02 &middot; Nutrition</p>
       <h3 class="serif blogpost-title">SLIMLAND: Why Kiwis are a GOATED Fruit</h3>
 
@@ -2599,6 +2664,8 @@ footer{background:var(--paper);border-top:1px solid var(--line);padding:70px 0 4
        a:"HONI<i>ORA</i> comes from a small team: Gregory Miller-Hard (Founder & CEO), Nicole Miller-Hard (Founder & Marketing), Laura Clinton (R&D + QA), Scott Smith (Medical Herbalist & Naturopath), and Odette Miller-Hard (Brand Design)."},
       {k:["price","cost","how much","subscription","subscribe"],
        a:"A Monthly Protocol runs $6.00 per dose, $210 a month, with a bonus 7 days of product and founding-member perks. A Single Pack (one tube, one week) is $7.50 per dose, $52.50 total, credited if you subscribe afterward. Joining the founding waitlist is free."},
+      {k:["blood pressure medication","blood pressure meds","medication blood pressure","bp medication","blood pressure interaction","interact blood pressure"],
+       a:"If you take prescription medication, especially for blood pressure, talk to your doctor before use. These statements haven't been evaluated by the FDA and the product isn't intended to diagnose, treat, cure or prevent any disease."},
       {k:["safe","allerg","pregnan","blood pressure","medication","side effect","milk","dairy","gluten"],
        a:"HONI<i>ORA</i> contains a milk derivative (VasoDrive-AP casein lactotripeptides), so it isn't suitable for a dairy allergy, and it's certified gluten-free below 5.0 ppm. It's not intended for anyone under 18, or anyone pregnant or breastfeeding. If you take prescription medication, especially for blood pressure, talk to your doctor before use. These statements haven't been evaluated by the FDA and the product isn't intended to diagnose, treat, cure or prevent any disease."},
       {k:["meaning","name","what does honiora mean","te reo","maori"],
