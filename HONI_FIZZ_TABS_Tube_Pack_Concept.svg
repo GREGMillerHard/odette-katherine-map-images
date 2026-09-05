@@ -1,0 +1,225 @@
+<svg viewBox="0 0 1600 2200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#171D12"/>
+    <stop offset="1" stop-color="#10140C"/>
+  </linearGradient>
+  <linearGradient id="cylBody" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#12160D"/>
+    <stop offset="0.14" stop-color="#232A19"/>
+    <stop offset="0.30" stop-color="#3C4629"/>
+    <stop offset="0.46" stop-color="#232A19"/>
+    <stop offset="0.62" stop-color="#151A0F"/>
+    <stop offset="0.80" stop-color="#1D2314"/>
+    <stop offset="1" stop-color="#0C0F08"/>
+  </linearGradient>
+  <linearGradient id="capGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8A6D1B"/>
+    <stop offset="0.32" stop-color="#F0D27A"/>
+    <stop offset="0.5" stop-color="#C9A227"/>
+    <stop offset="0.68" stop-color="#F0D27A"/>
+    <stop offset="1" stop-color="#8A6D1B"/>
+  </linearGradient>
+  <radialGradient id="capTop" cx="0.38" cy="0.32" r="0.75">
+    <stop offset="0" stop-color="#F0D27A"/>
+    <stop offset="0.55" stop-color="#C9A227"/>
+    <stop offset="1" stop-color="#8A6D1B"/>
+  </radialGradient>
+  <linearGradient id="baseGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#0A0D07"/>
+    <stop offset="0.5" stop-color="#1B2113"/>
+    <stop offset="1" stop-color="#080A05"/>
+  </linearGradient>
+  <radialGradient id="coinGrad" cx="0.35" cy="0.3" r="0.8">
+    <stop offset="0" stop-color="#F0D27A"/>
+    <stop offset="0.6" stop-color="#C9A227"/>
+    <stop offset="1" stop-color="#8A6D1B"/>
+  </radialGradient>
+
+</defs>
+<rect x="0" y="0" width="1600" height="2200" fill="url(#bgGrad)"/>
+<rect x="24" y="24" width="1552" height="2152" fill="none" stroke="#3A4230" stroke-width="1.5"/>
+<text x="80" y="108" font-family="Liberation Sans Narrow" font-weight="700" font-size="26" letter-spacing="8" fill="#C9A227">HONICO</text>
+<text x="80" y="172" font-family="Liberation Sans" font-weight="700" font-size="58" fill="#F4EEDD">HONI FIZZ TABS</text>
+<text x="80" y="212" font-family="Liberation Sans" font-weight="400" font-size="24" font-style="italic" fill="#8B8F82">Tube Pack — Packaging Concept</text>
+<line x1="80" y1="240" x2="1520" y2="240" stroke="#C9A227" stroke-width="1.5"/>
+<text x="1520" y="212" font-family="Liberation Sans" font-weight="400" font-size="18" fill="#8B8F82" text-anchor="end">Sanner BioBase · 29-31mm bracket (R 509 AWG) · 104.5mm L</text>
+<ellipse cx="430" cy="1078" rx="202.5" ry="26" fill="#000000" opacity="0.45"/>
+<rect x="280.0" y="365.0" width="300" height="695.0" fill="url(#cylBody)"/>
+<ellipse cx="430" cy="1060.0" rx="150.0" ry="34" fill="url(#baseGrad)"/>
+<rect x="294.0" y="395.0" width="272" height="545.0" fill="#0E1109" opacity="0.92"/>
+<rect x="304.0" y="405.0" width="252" height="525.0" fill="none" stroke="#8A6D1B" stroke-width="1.5"/>
+<text x="430" y="465.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="15" letter-spacing="5" fill="#C9A227" text-anchor="middle">HONICO</text>
+<text x="430" y="511.0" font-family="Liberation Sans" font-weight="700" font-size="34" fill="#F4EEDD" text-anchor="middle">HONI FIZZ</text>
+<text x="430" y="549.0" font-family="Liberation Sans" font-weight="700" font-size="34" fill="#C9A227" text-anchor="middle">TABS</text>
+<line x1="360" y1="575.0" x2="500" y2="575.0" stroke="#8A6D1B" stroke-width="1"/>
+<text x="430" y="601.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="12.5" letter-spacing="2.5" fill="#8B8F82" text-anchor="middle">EFFERVESCENT PERFORMANCE TABLET</text>
+<circle cx="334" cy="657.0" r="30" fill="none" stroke="#C9A227" stroke-width="2"/>
+<text x="334" y="663.0" font-family="Liberation Sans" font-weight="700" font-size="15" fill="#F4EEDD" text-anchor="middle">Cr.01</text>
+<text x="334" y="709.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="10.5" letter-spacing="1.3" fill="#8B8F82" text-anchor="middle">CREATINE</text>
+<circle cx="430" cy="657.0" r="30" fill="none" stroke="#C9A227" stroke-width="2"/>
+<text x="430" y="663.0" font-family="Liberation Sans" font-weight="700" font-size="15" fill="#F4EEDD" text-anchor="middle">850</text>
+<text x="430" y="709.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="10.5" letter-spacing="1.3" fill="#8B8F82" text-anchor="middle">MGO MANUKA</text>
+<circle cx="526" cy="657.0" r="30" fill="none" stroke="#C9A227" stroke-width="2"/>
+<text x="526" y="663.0" font-family="Liberation Sans" font-weight="700" font-size="15" fill="#F4EEDD" text-anchor="middle">LGK</text>
+<text x="526" y="709.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="10.5" letter-spacing="1.3" fill="#8B8F82" text-anchor="middle">GOLD KIWI</text>
+<line x1="340" y1="747.0" x2="520" y2="747.0" stroke="#8A6D1B" stroke-width="1"/>
+<text x="430" y="781.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="15" letter-spacing="2" fill="#F4EEDD" text-anchor="middle">14 TABLETS · 7 SERVINGS</text>
+<text x="430" y="807.0" font-family="Liberation Sans" font-weight="400" font-size="13" fill="#8B8F82" text-anchor="middle">2 tabs / 400ml cold water</text>
+<g stroke="#C9A227" stroke-width="2" fill="none" stroke-linecap="round">
+<path d="M340.0 914.0 L340.0 880.0"/>
+<path d="M340.0 886.0 q 12.0 -6 16.0 -14"/>
+<path d="M340.0 886.0 q -12.0 -6 -16.0 -14"/>
+<path d="M340.0 894.0 q 10.5 -6 14.5 -14"/>
+<path d="M340.0 894.0 q -10.5 -6 -14.5 -14"/>
+<path d="M340.0 902.0 q 9.0 -6 13.0 -14"/>
+<path d="M340.0 902.0 q -9.0 -6 -13.0 -14"/>
+<path d="M340.0 910.0 q 7.5 -6 11.5 -14"/>
+<path d="M340.0 910.0 q -7.5 -6 -11.5 -14"/>
+</g>
+<text x="340.0" y="930.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="8.5" letter-spacing="1" fill="#8B8F82" text-anchor="middle">NZ</text>
+<rect x="494.0" y="856.0" width="56" height="56" fill="none" stroke="#8A6D1B" stroke-width="1.5"/>
+<rect x="542.0" y="856.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="494.0" y="864.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="502.0" y="864.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="518.0" y="864.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="502.0" y="872.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="510.0" y="872.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="518.0" y="872.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="526.0" y="872.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="494.0" y="880.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="502.0" y="880.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="510.0" y="880.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="518.0" y="880.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="534.0" y="880.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="542.0" y="880.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="526.0" y="888.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="534.0" y="888.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="542.0" y="888.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="502.0" y="896.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="510.0" y="896.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="518.0" y="896.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="526.0" y="896.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="494.0" y="904.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="526.0" y="904.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<text x="522.0" y="928.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="8" letter-spacing="1" fill="#8B8F82" text-anchor="middle">SGS COA</text>
+<line x1="310.0" y1="371.0" x2="310.0" y2="1054.0" stroke="#FFFFFF" stroke-width="2" opacity="0.1"/>
+<line x1="370.0" y1="371.0" x2="370.0" y2="1054.0" stroke="#FFFFFF" stroke-width="2" opacity="0.22"/>
+<line x1="550.0" y1="371.0" x2="550.0" y2="1054.0" stroke="#FFFFFF" stroke-width="2" opacity="0.08"/>
+<ellipse cx="430" cy="365.0" rx="150.0" ry="23.799999999999997" fill="#20260F" stroke="#000" stroke-width="0.5" opacity="0.9"/>
+<rect x="280.0" y="334" width="300" height="96" fill="url(#capGrad)"/>
+<ellipse cx="430" cy="430" rx="150.0" ry="23.799999999999997" fill="#8A6D1B"/>
+<ellipse cx="430" cy="334" rx="150.0" ry="34" fill="url(#capTop)" stroke="#8A6D1B" stroke-width="1.5"/>
+<g stroke="#00000055" stroke-width="1.5">
+<line x1="568.0" y1="334.0" x2="580.0" y2="334.0"/>
+<line x1="292.0" y1="334.0" x2="280.0" y2="334.0"/>
+<line x1="295.5" y1="327.0" x2="283.8" y2="326.4"/>
+<line x1="305.7" y1="320.4" x2="294.9" y2="319.2"/>
+<line x1="322.1" y1="314.5" x2="312.7" y2="312.8"/>
+<line x1="344.0" y1="309.5" x2="336.5" y2="307.4"/>
+<line x1="370.1" y1="305.8" x2="364.9" y2="303.4"/>
+<line x1="399.3" y1="303.5" x2="396.6" y2="300.9"/>
+<line x1="430.0" y1="302.7" x2="430.0" y2="300.0"/>
+<line x1="460.7" y1="303.5" x2="463.4" y2="300.9"/>
+<line x1="489.9" y1="305.8" x2="495.1" y2="303.4"/>
+<line x1="516.0" y1="309.5" x2="523.5" y2="307.4"/>
+<line x1="537.9" y1="314.5" x2="547.3" y2="312.8"/>
+<line x1="554.3" y1="320.4" x2="565.1" y2="319.2"/>
+<line x1="564.5" y1="327.0" x2="576.2" y2="326.4"/>
+</g>
+<text x="430" y="340" font-family="Liberation Sans Narrow" font-weight="700" font-size="11" letter-spacing="2" fill="#4A3A08" text-anchor="middle">DESICCANT CAP</text>
+<rect x="280.0" y="334" width="300" height="726" fill="none" stroke="#00000066" stroke-width="1"/>
+<text x="430" y="1130" font-family="Liberation Sans Narrow" font-weight="700" font-size="14" letter-spacing="2" fill="#8B8F82" text-anchor="middle">FRONT PANEL — WRAP-AROUND LABEL, CONTINUOUS PATTERN</text>
+<text x="980" y="310" font-family="Liberation Sans Narrow" font-weight="700" font-size="14" letter-spacing="3" fill="#C9A227">TABLET</text>
+<circle cx="1110" cy="440" r="130" fill="url(#coinGrad)"/>
+<circle cx="1110" cy="440" r="120" fill="none" stroke="#8A6D1B" stroke-width="2"/>
+<text x="1110" y="434" font-family="Liberation Sans" font-weight="700" font-size="26" fill="#2A2103" text-anchor="middle">HONI</text>
+<text x="1110" y="470" font-family="Liberation Sans" font-weight="700" font-size="26" fill="#2A2103" text-anchor="middle">FIZZ</text>
+<text x="980" y="620" font-family="Liberation Sans" font-weight="400" font-size="15" fill="#8B8F82">29mm diameter · 5.3g · matte finish</text>
+<text x="980" y="646" font-family="Liberation Sans" font-weight="400" font-size="15" fill="#8B8F82">2-line emboss, Liberation Sans Bold ref.</text>
+<line x1="980" y1="700" x2="1280" y2="700" stroke="#3A4230" stroke-width="1"/>
+<text x="980" y="744" font-family="Liberation Sans Narrow" font-weight="700" font-size="14" letter-spacing="3" fill="#C9A227">ACTIVES ON PACK</text>
+<circle cx="1002" cy="790" r="20" fill="none" stroke="#C9A227" stroke-width="1.8"/>
+<text x="1002" y="795" font-family="Liberation Sans" font-weight="700" font-size="10.5" fill="#F4EEDD" text-anchor="middle">Cr.01</text>
+<text x="1036" y="795" font-family="Liberation Sans" font-weight="400" font-size="14.5" fill="#F4EEDD">Jenerise Cr.01 Creatine Monohydrate — 5,000mg/serving</text>
+<circle cx="1002" cy="844" r="20" fill="none" stroke="#C9A227" stroke-width="1.8"/>
+<text x="1002" y="849" font-family="Liberation Sans" font-weight="700" font-size="10.5" fill="#F4EEDD" text-anchor="middle">850</text>
+<text x="1036" y="849" font-family="Liberation Sans" font-weight="400" font-size="14.5" fill="#F4EEDD">High MGO 850 Manuka Crystals (NZ) — 600mg/serving</text>
+<circle cx="1002" cy="898" r="20" fill="none" stroke="#C9A227" stroke-width="1.8"/>
+<text x="1002" y="903" font-family="Liberation Sans" font-weight="700" font-size="10.5" fill="#F4EEDD" text-anchor="middle">LGK</text>
+<text x="1036" y="903" font-family="Liberation Sans" font-weight="400" font-size="14.5" fill="#F4EEDD">Livaux Gold Kiwi (NZ) — 600mg/serving, clinical dose</text>
+<line x1="980" y1="942" x2="1280" y2="942" stroke="#3A4230" stroke-width="1"/>
+<text x="980" y="982" font-family="Liberation Sans Narrow" font-weight="700" font-size="14" letter-spacing="3" fill="#C9A227">MATERIAL</text>
+<text x="980" y="1006" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82">Sanner BioBase bio-PE tube</text>
+<text x="980" y="1030" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82">29-31mm bracket · 104.5mm length</text>
+<text x="980" y="1054" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82">Ref. part R 509 AWG</text>
+<text x="980" y="1078" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82">Integrated desiccant cap</text>
+<text x="980" y="1102" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82">OD estimated ~34mm — confirm</text>
+<text x="980" y="1126" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82">exact OD/wall &amp; BioBase fit</text>
+<text x="980" y="1150" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82">for this part with Sanner</text>
+<line x1="80" y1="1170" x2="1520" y2="1170" stroke="#C9A227" stroke-width="1.5"/>
+<text x="80" y="1214" font-family="Liberation Sans Narrow" font-weight="700" font-size="20" letter-spacing="4" fill="#C9A227">LABEL WRAP — FLAT (UNROLLED)</text>
+<text x="1520" y="1214" font-family="Liberation Sans" font-weight="400" font-size="15" fill="#8B8F82" text-anchor="end">R 509 AWG bracket, OD estimated ~34mm — confirm before dieline lock</text>
+<rect x="346.03986155627484" y="1250" width="907.9202768874503" height="765.0" fill="#0E1109" stroke="#8A6D1B" stroke-width="1.5"/>
+<text x="800.0" y="1316" font-family="Liberation Sans Narrow" font-weight="700" font-size="16" letter-spacing="5" fill="#C9A227" text-anchor="middle">HONICO</text>
+<text x="800.0" y="1366" font-family="Liberation Sans" font-weight="700" font-size="38" fill="#F4EEDD" text-anchor="middle">HONI FIZZ TABS</text>
+<text x="800.0" y="1398" font-family="Liberation Sans Narrow" font-weight="700" font-size="13.5" letter-spacing="3" fill="#8B8F82" text-anchor="middle">EFFERVESCENT PERFORMANCE TABLET</text>
+<line x1="660.0" y1="1438" x2="940.0" y2="1438" stroke="#8A6D1B" stroke-width="1"/>
+<circle cx="620.0" cy="1478" r="26" fill="none" stroke="#C9A227" stroke-width="1.8"/>
+<text x="620.0" y="1483" font-family="Liberation Sans" font-weight="700" font-size="13" fill="#F4EEDD" text-anchor="middle">Cr.01</text>
+<text x="620.0" y="1524" font-family="Liberation Sans Narrow" font-weight="700" font-size="9.5" letter-spacing="1" fill="#8B8F82" text-anchor="middle">CREATINE</text>
+<circle cx="800.0" cy="1478" r="26" fill="none" stroke="#C9A227" stroke-width="1.8"/>
+<text x="800.0" y="1483" font-family="Liberation Sans" font-weight="700" font-size="13" fill="#F4EEDD" text-anchor="middle">850</text>
+<text x="800.0" y="1524" font-family="Liberation Sans Narrow" font-weight="700" font-size="9.5" letter-spacing="1" fill="#8B8F82" text-anchor="middle">MGO MANUKA</text>
+<circle cx="980.0" cy="1478" r="26" fill="none" stroke="#C9A227" stroke-width="1.8"/>
+<text x="980.0" y="1483" font-family="Liberation Sans" font-weight="700" font-size="13" fill="#F4EEDD" text-anchor="middle">LGK</text>
+<text x="980.0" y="1524" font-family="Liberation Sans Narrow" font-weight="700" font-size="9.5" letter-spacing="1" fill="#8B8F82" text-anchor="middle">GOLD KIWI</text>
+<text x="800.0" y="1564" font-family="Liberation Sans Narrow" font-weight="700" font-size="14" letter-spacing="2" fill="#F4EEDD" text-anchor="middle">14 TABLETS · 7 SERVINGS · 2 TABS / 400ML</text>
+<text x="800.0" y="1594" font-family="Liberation Sans" font-weight="400" font-size="12.5" fill="#8B8F82" text-anchor="middle">Made with New Zealand provenance ingredients</text>
+<g stroke="#C9A227" stroke-width="2" fill="none" stroke-linecap="round">
+<path d="M406.03986155627484 1993.0 L406.03986155627484 1959.0"/>
+<path d="M406.03986155627484 1965.0 q 12.0 -6 16.0 -14"/>
+<path d="M406.03986155627484 1965.0 q -12.0 -6 -16.0 -14"/>
+<path d="M406.03986155627484 1973.0 q 10.5 -6 14.5 -14"/>
+<path d="M406.03986155627484 1973.0 q -10.5 -6 -14.5 -14"/>
+<path d="M406.03986155627484 1981.0 q 9.0 -6 13.0 -14"/>
+<path d="M406.03986155627484 1981.0 q -9.0 -6 -13.0 -14"/>
+<path d="M406.03986155627484 1989.0 q 7.5 -6 11.5 -14"/>
+<path d="M406.03986155627484 1989.0 q -7.5 -6 -11.5 -14"/>
+</g>
+<text x="406.03986155627484" y="2011.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="9" letter-spacing="1" fill="#8B8F82" text-anchor="middle">NZ</text>
+<rect x="1157.960138443725" y="1923.0" width="56" height="56" fill="none" stroke="#8A6D1B" stroke-width="1.5"/>
+<rect x="1173.960138443725" y="1923.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1189.960138443725" y="1923.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1205.960138443725" y="1931.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1173.960138443725" y="1939.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1181.960138443725" y="1939.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1189.960138443725" y="1939.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1205.960138443725" y="1939.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1165.960138443725" y="1947.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1205.960138443725" y="1947.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1165.960138443725" y="1955.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1173.960138443725" y="1955.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1189.960138443725" y="1955.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1165.960138443725" y="1963.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1189.960138443725" y="1963.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1157.960138443725" y="1971.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1165.960138443725" y="1971.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1181.960138443725" y="1971.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1189.960138443725" y="1971.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1197.960138443725" y="1971.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<rect x="1205.960138443725" y="1971.0" width="8.0" height="8.0" fill="#8A6D1B"/>
+<text x="1185.960138443725" y="1995.0" font-family="Liberation Sans Narrow" font-weight="700" font-size="8" letter-spacing="1" fill="#8B8F82" text-anchor="middle">SGS COA</text>
+<line x1="346.03986155627484" y1="2061.0" x2="1253.960138443725" y2="2061.0" stroke="#8B8F82" stroke-width="1"/>
+<line x1="346.03986155627484" y1="2051.0" x2="346.03986155627484" y2="2071.0" stroke="#8B8F82" stroke-width="1"/>
+<line x1="1253.960138443725" y1="2051.0" x2="1253.960138443725" y2="2071.0" stroke="#8B8F82" stroke-width="1"/>
+<text x="800.0" y="2091.0" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82" text-anchor="middle">~107mm wrap width (circumference)</text>
+<line x1="312.03986155627484" y1="1250" x2="312.03986155627484" y2="2015.0" stroke="#8B8F82" stroke-width="1"/>
+<line x1="302.03986155627484" y1="1250" x2="322.03986155627484" y2="1250" stroke="#8B8F82" stroke-width="1"/>
+<line x1="302.03986155627484" y1="2015.0" x2="322.03986155627484" y2="2015.0" stroke="#8B8F82" stroke-width="1"/>
+<text x="298.03986155627484" y="1632.5" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82" text-anchor="end" transform="rotate(-90 298.03986155627484 1632.5)">90mm label height</text>
+<line x1="80" y1="2130" x2="1520" y2="2130" stroke="#3A4230" stroke-width="1"/>
+<text x="80" y="2160" font-family="Liberation Sans" font-weight="400" font-size="14" font-style="italic" fill="#8B8F82">HONI FIZZ TABS — Tube Pack Concept · HoniCo · Confidential</text>
+<text x="1520" y="2160" font-family="Liberation Sans" font-weight="400" font-size="14" fill="#8B8F82" text-anchor="end">Direction only — not a print-ready dieline</text>
+</svg>
