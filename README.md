@@ -13,7 +13,16 @@ For GitHub Pages specifically: commit the folder as-is, flat, to the repo (or th
 
 ## Version
 
-This package corresponds to HONIORA_site_v244, updated 2026-09-05.
+This package corresponds to HONIORA_site_v247, updated 2026-09-05.
+
+Recent changes in this version:
+- 14/The Company: swapped the order of the "01" and "02" boxes so the "Who we are" company spiel now comes first, with the team portrait photo directly after it. Numbers travel with position (Who we are is now 01, the portrait is now 02), 03 (map) and 04 (360 view) unchanged.
+
+Recent changes in this version:
+- 11/The Taste heading: "HONIORA SKU2 Organoleptic Profile." &rarr; "HONIORA Organoleptic Profile." (dropped "SKU2").
+
+Recent changes in this version:
+- Removed the "About these references" note under the Clinical Thresholds ingredient table.
 
 Recent changes in this version:
 - Moved Braincurrant next to cGP-Pro in the ingredient scroller (they're both New Zealand blackcurrant-based, so they now sit as a pair).
